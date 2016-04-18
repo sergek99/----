@@ -1,7 +1,8 @@
 модель для сортировки любых данных в Yii2
 
-Пример вызова 
-
+Пример вызова
+ 
+```
 $productOffers = Offer::find()
     ->andWhere(['product_id'=>$productId])
     ->with([
@@ -28,3 +29,4 @@ $offersSort = new SortModel(
 );
 
 $offers = $offersSort->sort();
+```
